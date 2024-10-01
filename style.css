@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    margin-left: 197px;
+    margin-right: 197px;
+    width: 75%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.box-logo {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.header-logo-text {
+    margin-left: 6px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.box-logo>img {
+    width: 27px;
+    height: 27px;
+}
+
+.login-button {
+    font-size: 14px;
+    width: 161px;
+    padding: 10px;
+}
+
+.login-button>a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+}
+
+.submit-button {
+    font-size: 14px;
+    width: 112px;
+    height: 36px;
+    color: white;
+    background-color: rgb(37, 110, 235);
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+.submit-button>a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.buttons-header {
+    display: flex;
+}
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+    margin-left: 126px;
+}
+
+.blue-search-input {
+    background-color: rgb(37, 110, 235);
+    color: white;
+    display: flex;
+    width: 1425px;
+    height: 50px;
+    margin-top: 33px;
+    border-radius: 5px;
+}
+
+.search-input {
+    width: 1300px;
+    height: 44px;
+    border: none;
+    color: rgb(10, 20, 58);
+    border-radius: 5px;
+    margin: 3px;
+    padding-left: 21.45px;
+}
+
+.search-items>p {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.search-items {
+    display: flex;
+    cursor: pointer;
+}
+
+.search-items>img {
+    width: 14.65px;
+    height: 14.65px;
+    margin-left: 20px;
+}
+
+.search-items {
+    margin-top: 16px;
+}
+
+.cards-section {
+    margin-top: 45px;
+    width: 1000px;
+}
+
+.cards-section>h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    margin-top: 25px;
+    width: calc((100%-60px)/3);
+    margin-left: 30px;
+}
+
+.card:nth-child(1),
+.card:nth-child(4) {
+    margin-left: 0;
+}
+
+.blue-card-text {
+    color: rgb(37, 110, 235);
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.blue-card-text,
+.bold-card-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.grey-card-text {
+    color: rgb(196, 196, 196);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.main-sections {
+    display: flex;
+}
+
+.services-cards {
+    color: rgb(10, 20, 58);
+    margin-top: 51px;
+    width: 231px;
+}
+
+.services-cards>h2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.services-cards h4 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.services-cards img {
+    width: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .blue-search-input {
+        width: 80%;
+    }
+    .search-input {
+        width: 1020px;
+    }
+    .search-items {
+        width: 17%;
+    }
+    .search-items>p {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .search-items>img {
+        width: 14.65px;
+        height: 14.65px;
+    }
+}
+
+@media only screen and (max-width: 1430px) {
+    .search-items {
+        width: 30%;
+    }
+    .container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .services-cards {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .buttons-header {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .box-logo {
+        margin-left: 25px;
+    }
+    .submit-button {
+        margin-right: 30px;
+    }
+    .blue-search-input {
+        width: 80%;
+    }
+    .search-items {
+        width: 50%;
+    }
+    .search-input {
+        width: 920px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .card-image {
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .search-items {
+        width: 140%;
+    }
+    .search-input {
+        width: 520px;
+    }
+    .search-items>img {
+        width: 10.65px;
+        height: 10.65px;
+    }
+}
